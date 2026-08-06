@@ -2,7 +2,7 @@
 
 Static website for ABCivil Excavations, built with HTML5, CSS3 and vanilla JavaScript for deployment on GitHub Pages.
 
-## Phase 1 contents
+## Phase 1 contents:
 
 - Responsive homepage
 - Sticky navigation and mobile menu
