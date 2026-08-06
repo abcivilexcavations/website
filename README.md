@@ -1,4 +1,4 @@
-# ABCivil Excavations Website:
+# ABCivil Excavations Website
 
 Static website for ABCivil Excavations, built with HTML5, CSS3 and vanilla JavaScript for deployment on GitHub Pages.
 
@@ -73,3 +73,15 @@ GitHub Pages will redeploy automatically after each commit to `main`.
 ```text
 Build responsive Phase 1 homepage
 ```
+
+
+## Brand assets
+
+The master website logo files are stored in `assets/logos/`.
+
+- `logo.svg` — primary logo for light backgrounds
+- `logo-white.svg` — primary logo for dark backgrounds
+- `icon.svg` — standalone excavator mark
+- `favicon.ico`, `favicon.png` and `apple-touch-icon.png` — browser and device icons
+
+Brand line: **EXCAVATIONS & CIVIL WORKS**
