@@ -1,1 +1,231 @@
-<!doctype html><html lang="en-AU"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact Us | ABCivil Excavations</title><meta name="robots" content="noindex"><link rel="icon" href="favicon.ico" sizes="any"><link rel="icon" type="image/png" sizes="512x512" href="favicon.png"><link rel="apple-touch-icon" href="apple-touch-icon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><style>.phase-page{min-height:100vh;display:grid;place-items:center;padding:7rem 1.5rem;background:#f3f5f4;text-align:center}.phase-page div{max-width:680px}.phase-page .brand{justify-content:center;color:#0e1111;margin-bottom:3rem}.phase-page .brand-copy small{color:#6f7777}.phase-page p{color:#6f7777}.phase-page .button{margin-top:1rem}</style></head><body><main class="phase-page"><div><a class="brand" href="index.html" aria-label="ABCivil Excavations home"><img class="brand-logo phase-logo" src="assets/logos/logo.svg" alt="ABCivil Excavations &amp; Civil Works"></a><p class="eyebrow">Phase 2</p><h1 style="font-size:clamp(2.5rem,7vw,4.5rem)">Contact Us</h1><p>This page is reserved for Phase 2. The structure is in place so navigation works while the full content is being developed.</p><a class="button button-primary" href="index.html">Return to homepage</a></div></main></body></html>
+<!doctype html>
+<html lang="en-AU">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us | ABCivil Excavations</title>
+  <meta name="description" content="Request a free quote from ABCivil Excavations for excavation, demolition, earthworks, site preparation, trenching or rubbish removal.">
+  <meta name="theme-color" content="#114a4f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+  <script defer src="assets/js/main.js"></script>
+  <script defer src="assets/js/contact.js"></script>
+</head>
+<body class="contact-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="ABCivil Excavations home">
+        <img class="brand-logo" src="assets/logos/logo.svg" alt="ABCivil Excavations">
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" data-menu-toggle>
+        <span class="sr-only">Open navigation</span>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-navigation" aria-label="Primary navigation" data-navigation>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a class="active" href="contact.html">Contact Us</a>
+        <a class="button button-accent nav-cta" href="contact.html">Get a Free Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="contact-hero">
+      <div class="container contact-hero-grid">
+        <div class="contact-hero-copy reveal is-visible">
+          <p class="eyebrow light">Contact us</p>
+          <h1>Tell us about your next project</h1>
+          <p>Send through a few details and we’ll get back to you to discuss the job, site requirements and next steps.</p>
+        </div>
+
+        <div class="contact-quick reveal is-visible" aria-label="Contact details">
+          <p class="contact-quick-label">Prefer to contact us directly?</p>
+          <a href="tel:+61413186217">+61 413 186 217</a>
+          <a href="mailto:contact@abcivilexcavations.com.au">contact@abcivilexcavations.com.au</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-main" aria-labelledby="quote-form-title">
+      <div class="container contact-layout">
+        <aside class="contact-intro reveal">
+          <p class="eyebrow">Free quote</p>
+          <h2 id="quote-form-title">A few details to get started</h2>
+          <p>The more we know about the job, the easier it is to understand what you need before we get in touch.</p>
+
+          <div class="contact-note">
+            <strong>What happens next?</strong>
+            <p>We’ll review your enquiry and contact you using your preferred method to discuss the scope and arrange the next step.</p>
+          </div>
+        </aside>
+
+        <div class="quote-form-wrap reveal">
+          <!-- Replace YOUR_FORM_ID with the ID supplied by Formspree before publishing the form. -->
+          <form class="quote-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" data-quote-form novalidate>
+            <input type="hidden" name="_subject" value="New ABCivil Excavations quote request">
+
+            <div class="form-row form-row-two">
+              <div class="form-field">
+                <label for="name">Name <span aria-hidden="true">*</span></label>
+                <input id="name" name="name" type="text" autocomplete="name" required>
+              </div>
+
+              <div class="form-field">
+                <label for="phone">Phone (+61) <span aria-hidden="true">*</span></label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel"
+                       placeholder="0413 186 217" required>
+              </div>
+            </div>
+
+            <div class="form-row form-row-two">
+              <div class="form-field">
+                <label for="email">Email <span aria-hidden="true">*</span></label>
+                <input id="email" name="email" type="email" autocomplete="email" required>
+              </div>
+
+              <div class="form-field">
+                <label for="suburb-postcode">Suburb / Postcode <span aria-hidden="true">*</span></label>
+                <input id="suburb-postcode" name="suburb_postcode" type="text"
+                       autocomplete="postal-code" placeholder="e.g. Parramatta 2150" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="job-address">Job address</label>
+              <input id="job-address" name="job_address" type="text" autocomplete="street-address">
+            </div>
+
+            <fieldset class="form-field choice-group" data-service-group>
+              <legend>Service required <span aria-hidden="true">*</span></legend>
+              <p class="field-help">Select all that apply.</p>
+
+              <div class="checkbox-grid">
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Excavation">
+                  <span>Excavation</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Demolition">
+                  <span>Demolition</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Earthworks">
+                  <span>Earthworks</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Site Preparation">
+                  <span>Site Preparation</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Trenching">
+                  <span>Trenching</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Rubbish Removal">
+                  <span>Rubbish Removal</span>
+                </label>
+                <label class="choice-card">
+                  <input type="checkbox" name="service[]" value="Not sure">
+                  <span>Not sure</span>
+                </label>
+              </div>
+
+              <p class="field-error" data-service-error hidden>Please select at least one service.</p>
+            </fieldset>
+
+            <div class="form-row form-row-two">
+              <div class="form-field">
+                <label for="preferred-date">Preferred start date</label>
+                <input id="preferred-date" name="preferred_start_date" type="date">
+              </div>
+
+              <fieldset class="form-field contact-preference">
+                <legend>Preferred contact method <span aria-hidden="true">*</span></legend>
+                <div class="radio-row">
+                  <label class="choice-card choice-card-radio">
+                    <input type="radio" name="preferred_contact" value="Phone" required>
+                    <span>Phone</span>
+                  </label>
+                  <label class="choice-card choice-card-radio">
+                    <input type="radio" name="preferred_contact" value="Email" required>
+                    <span>Email</span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <div class="form-field">
+              <label for="description">Project description</label>
+              <textarea id="description" name="project_description" rows="6"
+                        placeholder="Tell us briefly about the work required, site access or anything else we should know."></textarea>
+            </div>
+
+            <!-- Honeypot field: real users should never complete this. -->
+            <div class="form-honeypot" aria-hidden="true">
+              <label for="company-website">Company website</label>
+              <input id="company-website" type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="form-submit">
+              <button class="button button-accent button-large" type="submit">Get a Free Quote</button>
+              <p>Fields marked * are required.</p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-service-strip">
+      <div class="container reveal">
+        <p class="eyebrow light">How we can help</p>
+        <p class="service-strip-list">Excavation <span>•</span> Demolition <span>•</span> Earthworks <span>•</span> Site Preparation <span>•</span> Trenching <span>•</span> Rubbish Removal</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand brand-footer" href="index.html" aria-label="ABCivil Excavations home">
+          <img class="brand-logo brand-logo-footer" src="assets/logos/logo.svg" alt="ABCivil Excavations">
+        </a>
+        <p>Reliable excavation, demolition, earthworks and civil works for projects of all sizes.</p>
+      </div>
+      <div>
+        <h2>Quick links</h2>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+      </div>
+      <div>
+        <h2>Services</h2>
+        <a href="services.html#excavation">Excavation</a>
+        <a href="services.html#demolition">Demolition</a>
+        <a href="services.html#earthworks">Earthworks</a>
+        <a href="services.html#trenching">Trenching</a>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>Phone: <a href="tel:+61413186217">+61 413 186 217</a></p>
+        <p>Email: <a href="mailto:contact@abcivilexcavations.com.au">contact@abcivilexcavations.com.au</a></p>
+        <a class="text-link footer-link" href="contact.html">Contact us →</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> ABCivil Excavations. All rights reserved.</p>
+      <a href="#">Privacy Policy</a>
+    </div>
+  </footer>
+</body>
+</html>
