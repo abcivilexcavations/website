@@ -321,3 +321,150 @@
     width: 100%;
   }
 }
+
+/* ABCivil â€” Contact page process timeline update
+   Replace the existing process/timeline styles in contact.css with this block.
+   Keep the rest of your form styles unchanged. */
+
+.contact-process {
+  position: sticky;
+  top: calc(var(--header-height) + 2rem);
+}
+
+.process-heading {
+  max-width: 430px;
+  margin-bottom: 1.8rem;
+}
+
+.process-heading h2 {
+  margin: 0;
+  max-width: 390px;
+  font-size: clamp(1.55rem, 2.3vw, 2rem);
+  line-height: 1.15;
+}
+
+.process-timeline {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: none;
+}
+
+.process-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 54px minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+  padding-bottom: 1rem;
+}
+
+.process-step::before {
+  content: "";
+  position: absolute;
+  left: 26px;
+  top: 50px;
+  bottom: -2px;
+  width: 2px;
+  background: #d3d9d9;
+}
+
+.process-step:last-child::before {
+  display: none;
+}
+
+.process-marker {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border: 2px solid var(--teal);
+  border-radius: 50%;
+  background: #f6f7f6;
+  color: var(--teal);
+  font: 700 .78rem/1 "Poppins", sans-serif;
+  letter-spacing: .08em;
+}
+
+.process-card {
+  padding: .9rem 1rem .95rem;
+  border: 1px solid #d9dede;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 8px 20px rgba(14,17,17,.035);
+}
+
+.process-card h3 {
+  margin: 0 0 .2rem;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.process-card p {
+  margin: 0;
+  color: #687070;
+  font-size: .9rem;
+  line-height: 1.45;
+}
+
+.process-step-final .process-marker {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: #fff;
+}
+
+.process-step-final .process-card {
+  border-color: rgba(230,126,34,.45);
+}
+
+.process-step-final .process-card h3 {
+  color: var(--ink);
+}
+
+/* Tablet/mobile:
+   keep the form first and move this process underneath */
+@media (max-width: 900px) {
+  .quote-form-wrap {
+    order: 1;
+  }
+
+  .contact-process {
+    position: static;
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  .process-heading,
+  .process-heading h2,
+  .process-timeline {
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 640px) {
+  .process-step {
+    grid-template-columns: 46px minmax(0, 1fr);
+    gap: .8rem;
+  }
+
+  .process-marker {
+    width: 46px;
+    height: 46px;
+    font-size: .72rem;
+  }
+
+  .process-step::before {
+    left: 22px;
+    top: 44px;
+  }
+
+  .process-card {
+    padding: .8rem .9rem;
+  }
+}
+
+
+
