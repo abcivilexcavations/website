@@ -1,5 +1,6 @@
 /* Phase 2 — Contact page
-   Scoped to .contact-page so the Phase 1 homepage remains untouched. */
+   Updated with vertical "What happens next?" process timeline.
+   Scoped to .contact-page so the rest of the site remains untouched. */
 
 .contact-page .site-header {
   background: rgba(14,17,17,.96);
@@ -66,37 +67,77 @@
   align-items: start;
 }
 
-.contact-intro {
+/* Vertical customer process */
+.contact-process {
   position: sticky;
   top: calc(var(--header-height) + 2rem);
 }
 
-.contact-intro > p:not(.eyebrow) {
-  max-width: 440px;
-  color: #5a6262;
+.contact-process > h2 {
+  max-width: 430px;
+  margin-bottom: 2rem;
+  font-size: clamp(1.7rem, 2.8vw, 2.35rem);
 }
 
-.contact-note {
-  max-width: 440px;
-  margin-top: 2.5rem;
-  padding: 1.5rem;
-  border-left: 3px solid var(--orange);
-  background: var(--white);
-}
-
-.contact-note strong {
-  display: block;
-  margin-bottom: .45rem;
-  font-family: "Poppins", sans-serif;
-  color: var(--ink);
-}
-
-.contact-note p {
+.process-timeline {
+  position: relative;
   margin: 0;
-  color: #5a6262;
-  font-size: .95rem;
+  padding: 0;
+  list-style: none;
 }
 
+.process-step {
+  position: relative;
+  display: grid;
+  grid-template-columns: 52px 1fr;
+  gap: 1rem;
+  padding: 0 0 1.65rem;
+}
+
+.process-step:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  left: 25px;
+  top: 42px;
+  bottom: 0;
+  width: 1px;
+  background: #c8cece;
+}
+
+.process-number {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #aeb9b9;
+  border-radius: 50%;
+  background: #f6f7f6;
+  color: var(--teal);
+  font: 700 .78rem/1 "Poppins", sans-serif;
+  letter-spacing: .08em;
+}
+
+.process-step h3 {
+  margin: .1rem 0 .25rem;
+  font-size: 1.05rem;
+}
+
+.process-step p {
+  max-width: 320px;
+  margin: 0;
+  color: #697171;
+  font-size: .92rem;
+}
+
+.process-step-final .process-number {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: var(--white);
+}
+
+/* Quote form */
 .quote-form-wrap {
   padding: clamp(1.6rem, 3vw, 3rem);
   border: 1px solid var(--border);
@@ -265,6 +306,7 @@
   font-size: .87rem;
 }
 
+/* Tablet/mobile: form first, timeline underneath */
 @media (max-width: 900px) {
   .contact-hero-grid,
   .contact-layout {
@@ -278,8 +320,19 @@
     border-top: 1px solid rgba(255,255,255,.22);
   }
 
-  .contact-intro {
+  .quote-form-wrap {
+    order: 1;
+  }
+
+  .contact-process {
     position: static;
+    order: 2;
+    margin-top: 1rem;
+  }
+
+  .contact-process > h2,
+  .process-timeline {
+    max-width: 620px;
   }
 }
 
@@ -301,5 +354,20 @@
 
   .form-submit .button {
     width: 100%;
+  }
+
+  .process-step {
+    grid-template-columns: 46px 1fr;
+    gap: .9rem;
+  }
+
+  .process-number {
+    width: 46px;
+    height: 46px;
+  }
+
+  .process-step:not(:last-child)::before {
+    left: 22px;
+    top: 38px;
   }
 }
