@@ -73,7 +73,7 @@
 }
 
 .about-story-copy {
-  max-width: 900px;
+  max-width: none;
 }
 
 .about-story-copy p {
