@@ -466,5 +466,69 @@
   }
 }
 
+/* Contact page â€” service areas
+   Add this block to the bottom of assets/css/contact.css */
+
+.service-areas {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.service-areas-inner {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: clamp(2rem, 7vw, 7rem);
+  align-items: center;
+}
+
+.service-areas-copy {
+  max-width: 760px;
+}
+
+.service-areas-copy h2 {
+  margin-bottom: .8rem;
+}
+
+.service-areas-copy p:last-child {
+  max-width: 700px;
+  margin-bottom: 0;
+  color: #c8d2d2;
+}
+
+.service-area-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: .75rem;
+}
+
+.service-area-tags span {
+  display: inline-flex;
+  align-items: center;
+  min-height: 46px;
+  padding: .7rem 1rem;
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: 999px;
+  background: rgba(255,255,255,.05);
+  color: var(--white);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .service-areas-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .service-area-tags {
+    justify-content: flex-start;
+  }
+}
+
+
+
+
+
 
 
