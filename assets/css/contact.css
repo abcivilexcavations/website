@@ -516,6 +516,22 @@
   white-space: nowrap;
 }
 
+.service-area-label {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.service-area-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+
+
 @media (max-width: 800px) {
   .service-areas-inner {
     grid-template-columns: 1fr;
